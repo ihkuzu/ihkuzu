@@ -10,7 +10,7 @@ I build applied AI software: retrieval-augmented generation, LLM agents, LLM app
 
 **[rag-doc-qa](https://github.com/ihkuzu/rag-doc-qa)**: question answering over PDFs with page-level citations. Python, FastAPI, PostgreSQL with pgvector, Docker, GitHub Actions. Includes a retrieval evaluation (hit@k, MRR) and works with local or hosted models.
 
-**[sql-agent](https://github.com/ihkuzu/sql-agent)**: tool-using LLM agent that answers questions about a SQLite database. Tool loop with error recovery, read-only guards, 12-question evaluation against reference queries, 65 tests without a model. Python, Ollama or Gemini, Docker, GitHub Actions.
+**[sql-agent](https://github.com/ihkuzu/sql-agent)**: tool-using LLM agent that answers questions about a SQLite database. Tool loop with error recovery, read-only guards, 12-question evaluation against reference queries, 66 tests without a model. Python, Ollama or Gemini, Docker, GitHub Actions.
 
 **[MADE-Project](https://github.com/ihkuzu/MADE-Project)**: data pipeline that analyzes how weather affects traffic accidents in New York City. Python, pandas, SQLite, automated tests and CI.
 
