@@ -4,7 +4,6 @@ AI Engineer based in Erlangen, Germany. M.Sc. in Artificial Intelligence from FA
 
 I build applied AI software: retrieval-augmented generation, LLM agents, LLM applications and machine learning on industrial sensor data.
 
-**Open to AI and LLM engineering roles in Germany and elsewhere in Europe.**
 
 ## Projects
 
@@ -23,6 +22,4 @@ I build applied AI software: retrieval-augmented generation, LLM agents, LLM app
 
 Python, TypeScript, C#, SQL, FastAPI, PostgreSQL, Docker, Next.js, NestJS, Linux, Git
 
-## Contact
 
-[LinkedIn](https://www.linkedin.com/in/halil-kuzu-07ab75193)
