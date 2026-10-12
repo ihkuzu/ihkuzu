@@ -2,7 +2,7 @@
 
 AI Engineer based in Erlangen, Germany. M.Sc. in Artificial Intelligence from FAU Erlangen-Nürnberg.
 
-I build applied AI software: retrieval-augmented generation, LLM agents, text classification, ML services and machine learning on industrial sensor data.
+I build applied AI software: retrieval-augmented generation, LLM agents and tool servers, text classification, ML services and machine learning on industrial sensor data.
 
 ## Projects
 
@@ -14,6 +14,8 @@ I build applied AI software: retrieval-augmented generation, LLM agents, text cl
 
 **[async-inference-service](https://github.com/ihkuzu/async-inference-service)**: queue-based ML inference service. Jobs go through a FastAPI endpoint into a Redis queue; a worker groups them into batches, retries failures, dead-letters the hopeless ones and shuts down gracefully. Idempotency keys, Prometheus metrics, a benchmark (without batching one worker tops out at 43 jobs/s, with batches of 8 it keeps up with 150 jobs/s at p95 under 100 ms, measured with a simulated model) and 41 tests that run against a real Redis. Python, Redis, Docker Compose, GitHub Actions.
 
+**[mcp-knowledge-server](https://github.com/ihkuzu/mcp-knowledge-server)**: MCP server that lets LLM clients search internal documents, query a sales database and submit jobs to the inference service above. Typed tool schemas, read-only SQL enforced by the database engine (read-only file, authorizer, timeouts and size caps), errors the model can recover from, bearer-token auth for HTTP, a search evaluation with unanswerable questions and 61 tests including a real stdio session. Python, MCP SDK, SQLite, Docker, GitHub Actions.
+
 **[MADE-Project](https://github.com/ihkuzu/MADE-Project)**: data pipeline that analyzes how weather affects traffic accidents in New York City. Python, pandas, SQLite, automated tests and CI.
 
 ## Experience
@@ -23,4 +25,4 @@ I build applied AI software: retrieval-augmented generation, LLM agents, text cl
 
 ## Tech
 
-Python, PyTorch, scikit-learn, TypeScript, C#, SQL, FastAPI, PostgreSQL, Redis, Docker, Next.js, NestJS, Linux, Git
+Python, PyTorch, scikit-learn, TypeScript, C#, SQL, FastAPI, MCP, PostgreSQL, Redis, Docker, Next.js, NestJS, Linux, Git
