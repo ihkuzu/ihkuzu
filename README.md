@@ -16,6 +16,8 @@ I build applied AI software: retrieval-augmented generation, LLM agents and tool
 
 **[mcp-knowledge-server](https://github.com/ihkuzu/mcp-knowledge-server)**: MCP server that lets LLM clients search internal documents, query a sales database and submit jobs to the inference service above. Typed tool schemas, read-only SQL enforced by the database engine (read-only file, authorizer, timeouts and size caps), errors the model can recover from, bearer-token auth for HTTP, a search evaluation with unanswerable questions and 61 tests including a real stdio session. Python, MCP SDK, SQLite, Docker, GitHub Actions.
 
+**[agent-graph-lab](https://github.com/ihkuzu/agent-graph-lab)**: the same 20 questions answered by a hand-written tool loop, a LangGraph agent and a LangGraph multi-agent team (router, documents specialist, data specialist, synthesizer), all using the tools of the MCP server above. The eval counts correctness, tool use, steps, model calls and latency per variant, and 34 tests run against the real server with a scripted model. Python, LangGraph, MCP client, Ollama or Gemini, Docker, GitHub Actions.
+
 **[MADE-Project](https://github.com/ihkuzu/MADE-Project)**: data pipeline that analyzes how weather affects traffic accidents in New York City. Python, pandas, SQLite, automated tests and CI.
 
 ## Experience
@@ -25,4 +27,4 @@ I build applied AI software: retrieval-augmented generation, LLM agents and tool
 
 ## Tech
 
-Python, PyTorch, scikit-learn, TypeScript, C#, SQL, FastAPI, MCP, PostgreSQL, Redis, Docker, Next.js, NestJS, Linux, Git
+Python, PyTorch, scikit-learn, TypeScript, C#, SQL, FastAPI, LangGraph, MCP, PostgreSQL, Redis, Docker, Next.js, NestJS, Linux, Git
